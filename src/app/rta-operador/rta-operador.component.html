@@ -1,0 +1,59 @@
+<div class="container">
+    <form [formGroup]="myForm">
+        <mat-card>
+            <mat-card-title>
+                <div class="divTitle">
+                    <mat-icon style="margin-right: 5px;">call</mat-icon>
+                    Llamada en Curso 
+                </div>
+            </mat-card-title>
+            <mat-card-content>
+                <table>
+                    <tr>
+                    <th>Cliente</th>
+                    <td>{{llamada.cliente.nombreCompleto | titlecase}}</td>
+                    </tr>
+                    <tr>
+                    <th>Categoría</th>
+                    <td>{{llamada.categoria.nombre}}</td>
+                    </tr>
+                    <tr>
+                    <th>Opción seleccionada</th>
+                    <td>{{llamada.opcionSeleccionada.nombre}}</td>
+                    </tr>
+                    <tr>
+                    <th>Sub-opción seleccionada</th>
+                    <td>{{llamada.subOpcionSeleccionada.nombre}}</td>
+                    </tr>
+                </table>
+            </mat-card-content>
+            <mat-divider></mat-divider>
+            <mat-card-title>
+                <div class="divTitle">
+                    <mat-icon style="margin-right: 5px;">done_all</mat-icon>
+                    Validaciones 
+                </div>
+            </mat-card-title>
+            <mat-card-content>
+                for (let validacion of validaciones) 
+                    validacion.nombre 
+                    input para validacion
+                
+            </mat-card-content>
+            <mat-divider></mat-divider>
+            <mat-card-title>
+                <div class="divTitle">
+                    <mat-icon style="margin-right: 5px;">description</mat-icon>
+                    Respuesta 
+                </div>
+            </mat-card-title>
+            <span>Ingrese la respuesta que considere</span>
+            <mat-form-field>
+                <textarea class="txtArea" matInput placeholder="Respuesta" formControlName="respuesta"></textarea>
+            </mat-form-field>
+            <div class="divButton">
+                <button mat-raised-button color="primary">Confirmar</button>
+            </div>
+        </mat-card>
+    </form>
+</div>

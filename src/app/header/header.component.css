@@ -1,0 +1,27 @@
+div{
+    width: 100vw;
+    height: 75px;
+    background-color: #12597b;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+img{
+    min-height: none;
+    max-height: 75px;
+    min-width: none;
+    max-width: 75px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+
+span{
+    color: white;
+    font-family: 'Belanosima', sans-serif;
+}
